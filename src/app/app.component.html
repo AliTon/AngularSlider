@@ -1,0 +1,14 @@
+<h1>My Angular slider</h1>
+<hr>
+<div class="container">
+  <img src="{{ cars[index].name }}" alt="nkar">
+  <div class="carInfo">
+    <p><i>speed</i>_{{ cars[index].speed}}</p>
+    <p><i>prodaction</i>_{{cars[index].Production}}</p>
+    <p><i>price</i>_{{cars[index].price}}</p>
+  </div>
+</div>
+<div class="arrow">
+  <img class="prev" (click)="nextItem()" src="assets/images/images.jpeg">
+  <img class="next" (click)="prevItem()" src="assets/images/images.png">
+</div>
